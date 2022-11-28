@@ -1,10 +1,8 @@
 addEventListener("DOMContentLoaded", (e) =>{
 
-    //Continuamos con el ejemplo suma con funcion anonima
-    //Al omitir el nombre de la funcion, esta toma el nombre de la variable
-    //A esto se le llama funcion Anonima
-    const suma = function(num1,num2){
-        console.log(`La suma de los numeros es: ${num1+num2}`);
-    } 
-    suma(7,35);
+    //Funciones como objetos
+    //Las funciones es pueden declarar como si fuesen objetos, aunque no es utilizado normalmente de esta forma
+    //Para esto se guarda en una variable declarada, utilizamos la palabra reservada new seguida de Function
+    const saludar = new Function("return'Hola!! Soy una funcion como objeto';");
+    console.log(saludar());
 })
